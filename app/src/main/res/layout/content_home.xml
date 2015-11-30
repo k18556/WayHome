@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="normal.wayhome.com.wayhome.HomeActivity"
+    tools:showIn="@layout/app_bar_home">
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="请选择出发城市和到达城市"
+        />
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/ll_address_src"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_below="@id/tv_hint"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="出发城市"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:padding="5dp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="出发城市"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:padding="5dp"
+            app:layout_widthPercent="40%w"
+            android:background="@drawable/bg_border_gray"
+            android:drawableRight="@mipmap/arrow_down"
+            />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+</RelativeLayout>
